@@ -39,7 +39,7 @@
 
   <h1>מדיניות פרטיות — MyCookBook</h1>
   <p class="lead">האפליקציה לשמירת מתכונים ולשיתופם בקהילה.</p>
-  <p class="updated">עודכן לאחרונה: 26 בספטמבר 2026 · גרסה 1.0</p>
+  <p class="updated">עודכן לאחרונה: 18 באוקטובר 2026 · גרסה 1.1 · <a href="#en">English</a></p>
 
   <p>
     המסמך מסביר איזה מידע MyCookBook אוספת, למה, עם מי הוא נחלק ומה אפשר לעשות איתו.
@@ -93,6 +93,7 @@
     <tr><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">YouTube Data API</a></td><td>מזהה הסרטון, כשאתה מייבא מתכון מקישור YouTube.</td></tr>
     <tr><td><a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Push</a></td><td>אסימון ההתראות ותוכן ההתראה, לצורך משלוח.</td></tr>
     <tr><td>אתר שממנו ייבאת מתכון</td><td>בקשת הדף עצמה, כשאתה מייבא מקישור.</td></tr>
+    <tr><td><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic (Claude)</a></td><td><strong>טקסט של מתכון ציבורי</strong> (כותרת, מצרכים, שלבים והערות) כשמנהל האפליקציה מבקש להכין לו גרסה באנגלית. נשלח רק טקסט המתכון, בלי פרטי המשתמש. מבוצע ביוזמת המנהל בלבד.</td></tr>
   </table>
   <p>לכל אחד מהשירותים האלה מדיניות פרטיות משלו, והקישור אליה בטבלה.</p>
 
@@ -124,6 +125,10 @@
     לעיין במידע שנשמר עליך, לתקן אותו, למחוק אותו או לבקש עותק — פנה אלינו במייל ונטפל בתוך 30 יום.
     המידע נשמר על שרתים מחוץ לישראל, ושימוש באפליקציה מהווה הסכמה להעברה זו.
   </p>
+  <p>
+    למשתמשים בארצות הברית יש זכויות נוספות לפי חוקי הפרטיות של מדינות שונות (למשל קליפורניה). הן מפורטות
+    בגרסה האנגלית שלמטה, בסעיף "Your privacy rights".
+  </p>
 
   <h2>8. ילדים</h2>
   <p>
@@ -141,62 +146,119 @@
 
   <hr style="margin:56px 0 0; border:0; border-top:1px solid var(--line)" />
 
-  <section class="en">
+  <section class="en" id="en" lang="en" dir="ltr">
     <h2>Privacy Policy — MyCookBook (English)</h2>
-    <p class="updated">Last updated: 26 September 2026 · version 1.0</p>
+    <p class="updated">Last updated: 18 October 2026 · version 1.1</p>
 
     <p>
-      You can use MyCookBook without an account. In that case your recipes and photos stay on your
-      device and are never sent anywhere. An account is needed only to sync between devices and to
-      take part in the community. We do not sell data, show ads, or use advertising trackers.
+      This policy explains what information MyCookBook collects, why, who it is shared with, and what you can
+      do about it. The operator of the MyCookBook app ("we", "us") is responsible for this information.
+      Questions: <a href="mailto:mycookbookservice@gmail.com">mycookbookservice@gmail.com</a>.
     </p>
 
-    <h3>What we collect with an account</h3>
+    <div class="box">
+      <strong>In short:</strong> you can use MyCookBook without an account. In that case your recipes and photos
+      stay on your device and are never sent anywhere. An account is needed only to sync between devices and to
+      take part in the community. We do not sell personal information, show ads, or use advertising trackers.
+    </div>
+
+    <h3>1. What we collect</h3>
+    <p>
+      <strong>Without an account:</strong> recipes, photos, categories and settings are stored on your device only;
+      we never see them. A random device identifier, not linked to who you are, is created to avoid counting the
+      same view of a community recipe twice.
+    </p>
+    <p><strong>With an account:</strong></p>
     <ul>
-      <li>Email address, display name and profile picture (if you sign in with Google).</li>
-      <li>Your recipes and their photos, so they sync across your devices.</li>
-      <li>Community activity: public recipes, comments, likes, ratings, saves, follows, view counts.</li>
-      <li>Moderation records: role, approved count, warnings, reports, mutes; and a record of your
-        acceptance of the terms (version, date, app version).</li>
-      <li>A push token per device and your notification preferences.</li>
+      <li>Email address, display name and profile picture (if you sign in with Google) — to identify your account and show your name next to recipes you publish.</li>
+      <li>Your recipes and their photos — to sync them across your devices and back them up.</li>
+      <li>Community activity: public recipes, comments, likes, ratings, saves and follows — to run the community.</li>
+      <li>View counts of public recipes — for "trending this week" and to show creators their numbers.</li>
+      <li>Moderation records: role, number of approved recipes, warnings, reports and mutes — to moderate the community and enforce its rules.</li>
+      <li>A record of your acceptance of the Terms of Use (version, date, app version) — as evidence that consent was given.</li>
+      <li>A push token for each device and your notification preferences — to send the notifications you asked for.</li>
     </ul>
-    <p>We do not collect location or contacts, and we use no analytics SDK.</p>
+    <p>We do not collect location or contacts, we show no ads, and we use no analytics or behavioural-tracking tools.</p>
 
-    <h3>Third parties</h3>
+    <h3>2. Device permissions</h3>
     <ul>
-      <li><strong>Supabase</strong> — hosts the account, recipes and photos that were synced.</li>
-      <li><strong>Google Sign-In</strong> — email, name and picture, if you choose it.</li>
-      <li><strong>Google Cloud Vision</strong> — a photo you ask to read text from (photo import, or a
-        scanned PDF). It is sent to be read and comes back as text; we do not store it. At present this
-        feature is available to app administrators only.</li>
-      <li><strong>YouTube Data API</strong> — the video id, when importing a recipe from a YouTube link.</li>
-      <li><strong>Expo Push</strong> — the push token and the notification text, to deliver it.</li>
+      <li><strong>Camera and photos</strong> — to photograph a dish or a recipe page, or pick an existing picture. The picture is saved with the recipe.</li>
+      <li><strong>Microphone</strong> — only in cooking mode, for voice commands ("next", "back"). Speech is handled by your phone's own speech recogniser and is not stored by us.</li>
+      <li><strong>Notifications</strong> — only if you allow them.</li>
     </ul>
+    <p>Each permission is requested when it is needed, and you can refuse it and keep using the app.</p>
 
-    <h3>Permissions</h3>
+    <h3>3. Service providers</h3>
+    <ul>
+      <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> — hosts the account, recipes and photos that were synced, on cloud servers.</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Sign-In</a> — email, name and picture, if you choose to sign in that way.</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Cloud Vision</a> — a photo you ask to read text from (photo import, or a scanned PDF). It is sent to be read and comes back as text; we do not store it. At present this feature is available to app administrators only.</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">YouTube Data API</a> — the video id, when you import a recipe from a YouTube link.</li>
+      <li><a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Push</a> — the push token and the text of the notification, to deliver it.</li>
+      <li><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic (Claude)</a> — the text of a public recipe (title, ingredients, steps and notes) when an app administrator asks for an English version of it. Only the recipe text is sent, never details about the member. This happens only at the administrator's initiative.</li>
+      <li>A website you import a recipe from — the page request itself, when you import from a link.</li>
+    </ul>
+    <p>These providers process information on our behalf to run the service, under their own privacy policies (linked above).</p>
+
+    <h3>4. Public content</h3>
     <p>
-      Camera and photo library for recipe pictures; microphone only in cooking mode for voice commands,
-      handled by the operating system's speech recogniser and not stored by us; notifications only if
-      you allow them.
+      A recipe you mark as public is visible to all app users together with your display name; so are your
+      comments. A private recipe stays private. A recipe imported from another website and shared in the community
+      is shown as a card with a link to the source, not as a full copy. A recipe may be shown in Hebrew, in
+      English or in both; an English version is prepared and approved by an app administrator.
     </p>
 
-    <h3>Deleting your account</h3>
+    <h3>5. How long we keep information</h3>
     <p>
-      In the app: Settings → My account → Delete account. This removes the account, uploaded recipes,
-      photos, comments, ratings and notifications, and cannot be undone. Without the app, use the
-      <a href="delete-account.html">account deletion request page</a>.
+      As long as the account exists. Deleting a recipe removes it from the app and the community; the deletion
+      marker is kept until all your devices have synced, and then the data is deleted. Encrypted backups are kept
+      for up to 30 days and then deleted too.
     </p>
 
-    <h3>Your rights and contact</h3>
+    <h3>6. Deleting your account</h3>
     <p>
-      To see, correct, delete or receive a copy of your data, write to
-      <a href="mailto:mycookbookservice@gmail.com">mycookbookservice@gmail.com</a>; we answer within 30
-      days. Data is held on servers outside Israel. The app is not directed at children under 13.
+      In the app: <strong>Settings → My account → Delete account</strong>. This deletes the account, uploaded
+      recipes, photos, comments, ratings and notifications, and cannot be undone. Without installing the app, use
+      the <a href="delete-account.html">account deletion request page</a>.
     </p>
+
+    <h3>7. Your privacy rights</h3>
+    <p>
+      Wherever you live, you can ask to see the information we hold about you, to correct it, to delete it or to
+      receive a copy of it. Write to <a href="mailto:mycookbookservice@gmail.com">mycookbookservice@gmail.com</a>
+      from the address you registered with; we may ask you to confirm the request comes from you.
+    </p>
+    <p>
+      <strong>United States residents.</strong> Depending on the state you live in (for example California,
+      Colorado, Connecticut, Virginia or Utah), you may have the right to know what personal information we
+      collect and how we use it, to access and receive a copy of it, to correct it, and to delete it. We do
+      <strong>not sell</strong> personal information, we do <strong>not share</strong> it for cross-context
+      behavioural advertising, we do not use it for targeted advertising or profiling, and we do not collect
+      sensitive personal information beyond what is needed to provide the service. We will not treat you
+      differently for using these rights. You may use an authorised agent, and if we decline a request you may
+      appeal by replying to our answer. We respond within 45 days.
+    </p>
+    <p>
+      Your information is stored on servers outside Israel and may be processed in other countries, including the
+      United States; by using the app you agree to this transfer.
+    </p>
+
+    <h3>8. Children</h3>
+    <p>
+      The app is not directed at children under 13, and we do not knowingly collect information from children
+      under 13. If such information reached us, write to us and we will delete it. Accounts and the community are
+      intended for people aged 16 or older, as set out in the Terms of Use.
+    </p>
+
+    <h3>9. Changes</h3>
+    <p>We will update this page when something changes; the date at the top shows the latest version. A material change will also be shown in the app.</p>
+
+    <h3>10. Contact</h3>
+    <p><a href="mailto:mycookbookservice@gmail.com">mycookbookservice@gmail.com</a></p>
   </section>
 
   <footer>
-    MyCookBook · <a href="index.html">דף הבית</a> · <a href="delete-account.html">מחיקת חשבון</a>
+    MyCookBook · <a href="index.html">דף הבית</a> · <a href="delete-account.html">מחיקת חשבון</a> · <a href="terms.html">תנאי שימוש</a> · <a href="#en">English</a>
   </footer>
 </main>
 </body>
